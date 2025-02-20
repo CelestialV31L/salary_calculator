@@ -17,6 +17,6 @@ elif salary <= 609350:
     tax = 55678.5 + .35 * (salary - 243725)
 else:
     tax = 183647.25 + .37 * (salary - 609350)
-print(f"You pay ${round(tax, 2):,} in taxes.")
+print(f"You pay ${round(tax, 2):,} in federal income taxes.")
 net = salary - tax
 print(f"After taxes, your salary is ${round(net, 2):,}")
