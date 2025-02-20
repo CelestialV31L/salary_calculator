@@ -8,6 +8,5 @@ Simply run `python salary_calculator.py` and it will ask you for your hourly wag
 
 Instructions for using in a native Linux environment:
 ```sh
-sudo chmod +x salary_calculator.py
 sudo ./salary_calculator.py
 ```
