@@ -1,5 +1,5 @@
 # salary_calculator
-This is just a simple script to calculate a yearly salary from an hourly wage. It will give you the information of how much tax you will pay, and your salary after taxes.
+This is a simple script to calculate a yearly salary from an hourly wage. It will give you the information of how much tax you will pay, and your salary after taxes.
 
 Instructions:
 Make sure you have Python installed. Run `python --version` if you are not sure.
