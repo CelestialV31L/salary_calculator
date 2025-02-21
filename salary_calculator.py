@@ -11,11 +11,13 @@ salary = biweekly * 26
 print(f"Before taxes, your salary is ${round(salary, 2):,}")
 
 standard_deduction = 14600
-taxable_salary = salary - standard_deduction
-print(f"Your taxable income is ${round(taxable_salary, 2):,} after the standard deduction.")
+
+if salary >= 14600:
+    taxable_salary = salary - standard_deduction
+    print(f"Your taxable income is ${round(taxable_salary, 2):,} after the standard deduction.")
 
 if salary <= 11600:
-   tax = "You owe nothing in federal taxes."
+   tax = 0
    # tax = salary * .10
 elif salary <= 47150:
     tax = .12 * (salary - standard_deduction)
