@@ -19,7 +19,7 @@ if salary >= 14600:
     taxable_salary = salary - standard_deduction
     print(f"Your taxable income is ${round(taxable_salary, 2):,} after the standard deduction.")
 else:
-    print("Your income is not taxable.")
+    print("Your income is not taxable as it is below the maximum for the standard deductible.")
 
 if salary <= 11600:
    tax = 0
