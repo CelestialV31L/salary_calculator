@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-try:
-    hourly = float(input("Enter in hourly wage: $"))
-    if hourly < 0:
-        raise ValueError("Hourly wage must be a positive number.")
-except ValueError as e:
+hourly = None
+while hourly is None:
+    try:
+        hourly = float(input("Enter in hourly wage: $"))
+        if hourly < 0:
+            hourly = None
+            raise ValueError("Hourly wage must be a positive number") 
+    except ValueError as e:
         print(f"Invalid input: {e}. Please enter a valid number for the hourly wage.")
 
 biweekly = hourly * 80
