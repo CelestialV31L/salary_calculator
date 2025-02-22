@@ -8,7 +8,6 @@ while hourly is None:
         hourly = float(input("Enter in hourly wage: $"))
         if hourly < 0:
             hourly = None
-            attempts += 1
             raise ValueError("Hourly wage must be a positive number") 
     except ValueError as e:
         attempts += 1
@@ -16,7 +15,6 @@ while hourly is None:
         if attempts == max_attempts:
             print("Maximum attempts reached. Exiting.")
             exit()
-
 
 salary = hourly * (80 * 26)
 print(f"Before taxes, your salary is ${round(salary, 2):,}")
