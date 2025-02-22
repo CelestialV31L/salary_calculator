@@ -14,7 +14,7 @@ while hourly is None:
         attempts += 1
         print(f"Invalid input: {e}. Please enter a valid number for the hourly wage.")
         if attempts == max_attempts:
-            print("Maximum attempts reached. Please try again and enter a valid number for the hourly wage.")
+            print("Maximum attempts reached. Exiting.")
             exit()
 
 
