@@ -1,16 +1,24 @@
 #!/usr/bin/env python3
 hourly = None
+attempts = 0
+max_attempts = 3
+
 while hourly is None:
     try:
         hourly = float(input("Enter in hourly wage: $"))
         if hourly < 0:
             hourly = None
+            attempts += 1
             raise ValueError("Hourly wage must be a positive number") 
     except ValueError as e:
+        attempts += 1
         print(f"Invalid input: {e}. Please enter a valid number for the hourly wage.")
+        if attempts == max_attempts:
+            print("Maximum attempts reached. Please try again and enter a valid number for the hourly wage.")
+            exit()
 
-biweekly = hourly * 80
-salary = biweekly * 26
+
+salary = hourly * (80 * 26)
 print(f"Before taxes, your salary is ${round(salary, 2):,}")
 
 standard_deduction = 14600
