@@ -28,10 +28,7 @@ else:
     print("Your income is not taxable as it is below the maximum for the standard deductible.")
     exit()
 
-if salary <= 11600:
-   tax = 0
-   # tax = salary * .10
-elif salary <= 47150:
+if salary <= 47150:
     tax = .12 * (salary - standard_deduction)
 elif salary <= 100525:
     tax = 3906 + .22 * (salary - 47150)
