@@ -1,5 +1,5 @@
 # salary_calculator
-This is a simple script to calculate a yearly salary from an hourly wage. It will also give you the information of how much of your income is taxable using the standard deductable, and how much federal income tax will come out of it, and then finally give you the salary after taxes.
+This is a simple script to calculate a yearly salary from an hourly wage.
 
 Instructions:
 Make sure you have Python installed. Run `python --version` if you are not sure.
